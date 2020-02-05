@@ -6,13 +6,11 @@ class Battle < Sinatra::Base
     erb :index
   end
 
-  post '/' do
-    p params
+  post '/names' do
     @name1 = params[:name1]
     @name2 = params[:name2]
-    erb :index
+    erb :play
   end
 
   run! if app_file == $0
 end
-
