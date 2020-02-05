@@ -17,6 +17,6 @@ feature 'Testing infrastructure' do
     fill_in "player_1_name", with: 'Ellie'
     fill_in "player_2_name", with: 'David'
     click_button 'Submit'
-    expect(page).to have_content 'Hit Points: 10'
+    expect(page).to have_content 'Hit Points: 10HP'
   end
 end
