@@ -5,6 +5,7 @@ require 'capybara/rspec'
 require 'rspec'
 require 'shotgun'
 require 'features/web_helpers'
+require './lib/player'
 
 Capybara.app = Battle
 
