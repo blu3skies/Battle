@@ -1,3 +1,7 @@
-<% if @name1 && @name2%> %>
-<h2><%=@name1%> vs. <%=@name2%></h2>
+<% if @player_1_name && @player_2_name%>
+<h2><%=@player_1_name%> vs. <%=@player_2_name%></h2>
+
+<h2><%=@player_1_name%>'s Hit Points: <%=@player_1_hp%></h2>
+<h2><%=@player_2_name%>'s Hit Points: <%=@player_2_hp%></h2>
+
 <% end %>

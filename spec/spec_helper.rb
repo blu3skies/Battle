@@ -3,6 +3,7 @@ require './app.rb'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'shotgun'
 
 Capybara.app = Battle
 
