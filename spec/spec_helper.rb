@@ -1,10 +1,10 @@
 ENV['RACK_ENV'] = 'test'
-require './app'
+require './app.rb'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'shotgun'
-require '/features/web_helpers'
+require 'features/web_helpers'
 
 Capybara.app = Battle
 
