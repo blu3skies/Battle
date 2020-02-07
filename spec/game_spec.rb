@@ -1,8 +1,8 @@
 require 'game'
 describe Game do 
-  let (:game) {Game.new }
   let (:ellie) {Player.new("Ellie")}
   let (:joe) {Player.new("Joe")}
+  let (:game) {Game.new("Ellie", "Joe")}
   it 'should respond to the attack method' do
     expect(game).to respond_to(:attack)
   end 

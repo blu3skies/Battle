@@ -1,12 +1,9 @@
-<% if @player_1_name && @player_2_name%>
 
-<h2><%=@player_1_name%> vs. <%=@player_2_name%></h2>
 
-<%=@player_1_name%>: <%=@player_1_hp%>HP
+<h2><%=@game.player1.name%> vs. <%=@game.player2.name%></h2>
+
+<%=@game.player1.name%>: <%=@game.player1.hit_points%>HP
 
 <form action="/attack">
     <input type="submit" value="Attack">
 </form> 
-
-
-<% end %>
