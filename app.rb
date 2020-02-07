@@ -20,8 +20,6 @@ class Battle < Sinatra::Base
     @player_2_name = $Player2.name
     @player_1_hp = $Player1.hit_points
     @player_2_hp = $Player2.hit_points
-    # session[:player_1_hp] = @player_1_hp
-    # session[:player_2_hp] = @player_2_hp  
     erb :play
   end
 
@@ -31,9 +29,6 @@ class Battle < Sinatra::Base
     $Player1.attack($Player2)
     @player_2_hp = $Player2.hit_points
     erb :attack
-    
-    # $Player2.attacked
-    # redirect '/play'
   end
 
   run! if app_file == $0

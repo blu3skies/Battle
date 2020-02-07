@@ -27,9 +27,3 @@ describe Player do
         end
     end
 end
-
-    #     it 'should reduce other player HP by 10' do
-    #         player = Player.new("Ellie")
-    #         expect(player.attacked).to eq 50
-    #     end
-    # end
